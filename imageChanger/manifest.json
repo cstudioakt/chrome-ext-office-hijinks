@@ -1,0 +1,17 @@
+{
+   "background": {
+	  "scripts": [ "background.js" ]
+  },
+   "content_scripts": [ {
+	  "css": [ "dslite.css" ],
+	  "js": [ "inline.js", "jquery.js" ],
+	  "matches": [ "*://*/*" ]
+   } ],
+   "web_accessible_resources": [
+	   "images/*.jpg"
+   ],
+   "manifest_version": 2,
+   "name": "DSLite",
+   "permissions": [ "*://*/*", "tabs" ],
+   "version": "0.1"
+}
